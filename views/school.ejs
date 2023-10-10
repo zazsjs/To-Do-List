@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="box" id="heading">
+        <h1>School</h1>
+    </div>
+    <div class="box">
+        
+            <% for(i=0; i< newListItems.length; i++){ %>
+                <div class="item itemLine">
+                <label class="item">
+                    <input type="checkbox" class="check">
+                    <span>
+                        <%= newListItems[i] %>
+                    </span>
+                </label>
+                <form name="form" class="item" action="/school" method="DELETE">
+                    <input type="hidden" name="deleteItem" value="<%=newListItems[i]%>">
+                    <button class="btn delete" type="submit" id="delete" value="delete" list="">x</button>
+                </form>
+                
+                </div>
+                <% } %>
+       
+        <form name="form" class="item" action="/school" method="POST">
+            <input type="text" name="newItem" placeholder=" New Item" autocomplete="off">
+            <button class="btn submit" type="submit" name="list" value="school" list="">+</button>
+        </form>
+    </div>
+
+
+    <%- include("partials/footer.ejs") %>

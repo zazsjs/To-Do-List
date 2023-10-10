@@ -1,0 +1,141 @@
+html{
+	font-family: 'Gloria Hallelujah', cursive;
+	text-decoration: none;
+}
+
+a:visited{
+	color:black;
+}
+
+/* To Do List Body Style */
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	min-height: 95vh;
+}
+
+main{
+	background-color: lightgray;
+		text-align: center;
+    	flex: 1 0 auto;
+	padding-bottom: 100px;
+	}
+
+#heading{
+	text-align: center;
+	width: 100%;
+	box-shadow: none;
+	font-size: 1.5rem;
+}
+
+h1{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+div {
+    display: block;
+}
+
+input[type=text]{
+	width: 100%;
+	margin-left: 7px;
+}
+
+button{
+	margin-right: 7px;
+	margin-left: 7px;
+}
+
+input[type=text], button{
+	display: inline-block;
+	font-size: 1.5rem;
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: start;
+}
+
+.delete{
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: auto;
+	border-radius: 100%;
+	border: none;
+	background-color: whitesmoke;
+	min-width: 2rem;
+	text-align: center;
+}
+
+.delete:hover {
+	background-color: lightcoral;
+	transition: 0.5s;
+}
+
+.submit:hover {
+	background-color: lightskyblue;
+	transition: 0.5s;
+}
+
+.box {
+	width: 600px;
+	max-width: 100%;
+    margin-left:auto;
+	margin-right:auto;
+    border-radius: .1rem;
+    box-shadow:0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+}
+
+input[type="checkbox"] {
+    margin: 20px;
+}
+
+.homeLists{
+	font-size: 2rem;
+}
+
+.check:checked + span{
+	text-decoration:line-through
+  }
+
+  .item {
+	min-height: 70px;
+	display: flex;
+	align-items: center;
+	background: white;
+  }
+
+.itemLine:not(:last-child) {
+	border-bottom: 1px solid lightblue;
+}
+
+.check{
+	margin-right: 20px;
+}
+
+span{
+	font-size: 1.5rem;
+	width: 100%;
+}
+
+.navbar-nav, .homeLists {
+	list-style-type: none;
+  }
+
+/* Nav Bar */
+.nav li, .nav-link {
+	display:inline-block;
+	font-size: 1.5rem;
+  }
+
+.alignRight{
+	float: right;
+}
+
+.alignRight > li {
+	padding-right: 1.5rem;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+  }
